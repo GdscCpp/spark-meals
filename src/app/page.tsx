@@ -4,8 +4,8 @@ import Button, { BUTTON_VARIENTS } from "@/lib/input/button";
 
 export default function Home() {
   return (
-    <main className={"flex min-h-screen bg-white"}>
-      <div className={"w-full bg-secondary-100 mx-8 flex"}>
+    <main className={"flex h-full bg-white"}>
+      <div className={"w-full h-fit bg-secondary-100 flex"}>
         {/* in the future, we may want to change these to % of screen size for better accessability*/}
         <div className={"mt-[208px] ml-[100px] w-1/2"}>
           <h1 className={"text-primary-500 text-5xl mb-5"}>Banner Title</h1>

@@ -8,11 +8,12 @@ import {
   useFirebaseApp,
 } from "reactfire";
 import firebaseConfig from "@/config/firebase";
+import Navbar from "@/lib/navabr";
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "600",
-  variable: "--font-serif"
+  variable: "--font-serif",
 });
 
 export default function RootLayout({
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <FirebaseAppProvider firebaseConfig={firebaseConfig}>
+          <Navbar />
           {children}
         </FirebaseAppProvider>
       </body>
