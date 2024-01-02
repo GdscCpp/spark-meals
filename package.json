@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "prepush": "npm run lint && npx prettier --write ."
+    "prepush": "npm run lint && npx prettier --write . && git add ."
   },
   "dependencies": {
     "firebase": "^9.23.0",
