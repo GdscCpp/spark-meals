@@ -1,6 +1,6 @@
 "use client";
 
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import {
   FirebaseAppProvider,
@@ -9,7 +9,11 @@ import {
 } from "reactfire";
 import firebaseConfig from "@/config/firebase";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "600",
+  variable: "--font-serif"
+});
 
 export default function RootLayout({
   children,
@@ -18,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <FirebaseAppProvider firebaseConfig={firebaseConfig}>
           {children}
         </FirebaseAppProvider>

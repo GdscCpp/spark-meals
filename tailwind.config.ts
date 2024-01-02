@@ -2,8 +2,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/lib/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -14,6 +13,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    fontFamily: {
+      serif: ["--var(--font-serif)"],
+    },
     colors: {
       primary: {
         500: "#262626",
@@ -21,6 +23,7 @@ const config: Config = {
       },
       secondary: {
         500: "#1e441e",
+        100: "#f4f4f4",
       },
       white: "#ffffff",
     },
