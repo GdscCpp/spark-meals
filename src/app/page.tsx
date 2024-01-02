@@ -1,9 +1,5 @@
-'use client';
+"use client";
 
 export default function Home() {
-  return (
-    <main className={"flex min-h-screen bg-white"}>
-
-    </main>
-  );
+  return <main className={"flex min-h-screen bg-white"}></main>;
 }
