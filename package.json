@@ -8,13 +8,14 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "prepush": "npm run lint && npx prettier --write ."
+    "prepush": "npm run lint && npx prettier --write . && git add ."
   },
   "dependencies": {
     "firebase": "^9.23.0",
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-svg": "16.1.32",
     "reactfire": "^4.2.3"
   },
   "devDependencies": {
