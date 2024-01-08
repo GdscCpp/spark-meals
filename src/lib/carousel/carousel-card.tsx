@@ -14,7 +14,12 @@ export default function CarouselCard({
   return (
     <div className="flex flex-col relative justify-center overflow-hidden items-center mx-[30px]">
       <h1 className="absolute text-2xl z-10 bottom-[105px]">{title}</h1>
-      <Button className="absolute text-2xl z-10 top-[355px]" varient={BUTTON_VARIENTS.SECONDARY}>{buttonText}</Button>
+      <Button
+        className="absolute text-2xl z-10 top-[355px]"
+        varient={BUTTON_VARIENTS.SECONDARY}
+      >
+        {buttonText}
+      </Button>
       <div>
         <img
           src={image}

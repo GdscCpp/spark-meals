@@ -34,13 +34,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${openSans.variable} ${inter.variable}`}>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${openSans.variable} ${inter.variable}`}
+    >
       <body>
         <FirebaseAppProvider firebaseConfig={firebaseConfig}>
           <Navbar />
           {children}
         </FirebaseAppProvider>
-       
       </body>
     </html>
   );
