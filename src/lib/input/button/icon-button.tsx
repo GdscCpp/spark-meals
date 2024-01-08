@@ -1,6 +1,5 @@
 import Icon from "@/lib/assets/icon";
 import Button from "./button";
-import { inter } from "@/app/layout";
 import { IconType } from "@/lib/assets/icons";
 
 export interface IconButtonProps {
