@@ -15,6 +15,8 @@ const config: Config = {
     },
     fontFamily: {
       serif: ["--var(--font-serif)"],
+      sans: ["--var(--font-sans)"],
+      inter: ["--var(--font-inter)"],
     },
     colors: {
       primary: {
