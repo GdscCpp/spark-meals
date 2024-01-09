@@ -2,9 +2,7 @@
 
 import { Inter, Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
-import {
-  FirebaseAppProvider,
-} from "reactfire";
+import { FirebaseAppProvider } from "reactfire";
 import firebaseConfig from "@/config/firebase";
 import Navbar from "@/lib/navabr";
 
