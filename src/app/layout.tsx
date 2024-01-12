@@ -1,12 +1,8 @@
 "use client";
 
-import { Inter, Poppins } from "next/font/google";
+import { Inter, Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
-import {
-  FirebaseAppProvider,
-  FirestoreProvider,
-  useFirebaseApp,
-} from "reactfire";
+import { FirebaseAppProvider } from "reactfire";
 import firebaseConfig from "@/config/firebase";
 import Navbar from "@/lib/navabr";
 
@@ -16,14 +12,29 @@ const poppins = Poppins({
   variable: "--font-serif",
 });
 
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-sans",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-inter",
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${openSans.variable} ${inter.variable}`}
+    >
+      <body>
         <FirebaseAppProvider firebaseConfig={firebaseConfig}>
           <Navbar />
           {children}
